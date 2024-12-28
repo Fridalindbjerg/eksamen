@@ -1,0 +1,169 @@
+html {
+  --background: #fdf9f2;
+  --gul1: #ffe694;
+  --gul2: #ffefba;
+  --gul3: #fff4d1;
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 15fr;
+  max-height: 2000px;
+}
+
+.top {
+  grid-row: 1/2;
+}
+header {
+  grid-row: 1/2;
+}
+
+/* header **********************************/
+
+nav li {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 14px;
+  margin-left: -11px;
+  border: black 1px solid;
+  border-radius: 14px;
+  font-size: 16px;
+  list-style: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn_portfolio {
+  background-color: var(--gul3);
+  margin-top: -2px;
+}
+
+.btn_home {
+  background-color: var(--gul1);
+  margin-top: -2px;
+}
+
+.btn_resume {
+  background-color: var(--gul2);
+  margin-top: -2px;
+}
+
+/* index **********************************/
+
+.box {
+  display: flex;
+  justify-content: center; /* Horisontal centrering */
+  position: relative;
+  width: 100vw;
+  height: 48vh;
+  margin-top: 40%;
+}
+.box1,
+.box2 {
+  position: absolute;
+  background-color: var(--gul2);
+  aspect-ratio: 1/1;
+  width: 50%;
+}
+
+.box2 {
+  background-color: var(--gul1);
+  top: -4%;
+  left: 20%;
+}
+.img_index {
+  position: absolute;
+  max-width: 50%;
+  padding-right: 9%;
+  top: -14%;
+  left: 19%;
+}
+
+.center {
+  display: flex;
+  justify-content: center; /* Horisontal centrering */
+  align-items: center;
+  margin: 0;
+  flex-direction: column; /* Stabler elementerne lodret */
+}
+
+.h1_index {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* portfolio **********************************/
+
+.grid-1_3_1 {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  margin-top: 34%;
+}
+
+.temas {
+  grid-column: 2/3;
+}
+
+.grid-1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 5px #c4b277 solid;
+  place-items: center;
+  text-align: center; /* Sørger for, at teksten er centreret indenfor h1 */
+  position: relative;
+  z-index: 1;
+}
+
+.grid-2_1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-left: #c4b277 5px solid;
+  border-right: #c4b277 5px solid;
+  /* border-bottom: #c4b277 5px solid; */
+  place-items: center;
+  text-align: center; /* Sørger for, at teksten er centreret indenfor h1 */
+  position: relative;
+  z-index: 1;
+}
+
+.t_pic {
+  display: grid;
+  position: absolute;
+  grid-column: 2/3;
+  width: 170%;
+  z-index: 0;
+}
+
+.t_pic_l {
+  display: grid;
+  position: absolute;
+  grid-column: 1/2;
+  width: 170%;
+  z-index: 0;
+}
+
+.tema_pic {
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.h2_tema {
+  position: relative;
+  font-size: 12px;
+  margin: 0;
+}
+
+.tema_text {
+  position: relative;
+  font-size: 10px;
+}
