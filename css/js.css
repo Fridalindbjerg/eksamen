@@ -1,0 +1,18 @@
+.home_button {
+  padding: 27px 90px !important;
+  box-sizing: border-box !important;
+  transform: scaleX(1) !important;
+  transition: transform 0.3s ease !important;
+  writing-mode: initial !important;
+  font-size: 31px !important;
+}
+
+.header_nav li a {
+  display: block;
+}
+/* 
+.home_button {
+  transform: scale(7) !important;
+  background-color: black !important;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+} */
