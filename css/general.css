@@ -22,7 +22,7 @@ header {
 
 /* header **********************************/
 
-nav li {
+.header_nav li {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   padding: 14px;
@@ -32,12 +32,12 @@ nav li {
   font-size: 16px;
   list-style: none;
 }
-nav ul {
+.header_nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav a {
+.header_nav a {
   color: black;
   text-decoration: none;
 }
@@ -90,7 +90,6 @@ nav a {
 
 .center {
   display: flex;
-  justify-content: center; /* Horisontal centrering */
   align-items: center;
   margin: 0;
   flex-direction: column; /* Stabler elementerne lodret */
@@ -98,7 +97,7 @@ nav a {
 
 .h1_index {
   display: flex;
-  align-items: flex-end;
+  text-align: right;
 }
 
 /* portfolio **********************************/
@@ -166,4 +165,28 @@ nav a {
 .tema_text {
   position: relative;
   font-size: 10px;
+}
+
+/* resume **********************************/
+
+.box3 {
+  display: flex;
+  justify-content: center; /* Horisontal centrering */
+  position: relative;
+  width: 100vw;
+  height: 48vh;
+  margin-top: 12%;
+}
+.box4 {
+  position: absolute;
+  background-color: var(--gul2);
+  aspect-ratio: 1/1.5;
+  width: 50%;
+  left: 32%;
+  top: 2%;
+}
+
+.test {
+  position: absolute;
+  max-width: 54%;
 }
