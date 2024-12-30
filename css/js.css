@@ -2,9 +2,13 @@
   padding: 27px 90px !important;
   box-sizing: border-box !important;
   transform: scaleX(1) !important;
-  transition: transform 0.3s ease !important;
+  /* transition: transform 1s ease !important; */
   writing-mode: initial !important;
-  font-size: 31px !important;
+  /* font-size: 31px !important; */
+}
+
+.translate {
+  transform: scaleX(3) !important;
 }
 
 .header_nav li a {

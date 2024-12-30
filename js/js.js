@@ -6,6 +6,7 @@ document.querySelectorAll(".header_nav li").forEach((li) => {
 function btns() {
   console.log("btn");
   document.querySelector(".header_nav li").classList.add("home_button");
+  document.querySelector(".header_nav li a").classList.add("translate");
 }
 
 function btns_remove() {
