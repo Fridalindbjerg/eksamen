@@ -329,10 +329,6 @@ p {
   border-radius: 4px;
 }
 
-.tema1 div:first-of-type {
-  max-width: 100%;
-}
-
 .pics_tema div:first-of-type {
   background-color: var(--gul2);
   border-radius: 50px;
@@ -378,6 +374,7 @@ p {
 
 .tema1 {
   margin-left: 5%;
+  max-width: 1200px;
 }
 
 @media (width >=500px) {
@@ -477,8 +474,32 @@ p {
     max-width: 450px;
   }
 
-  .tema1 img {
-    /* temas **********************************/
-    max-height: 54%;
+  /* temas **********************************/
+
+  .pic_media {
+    display: block;
+  }
+  .pics_tema {
+    background-color: var(--gul2);
+    border-radius: 50px;
+    padding: 0% 17%;
+    margin: 10px 30px;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pics_tema div:first-of-type {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    max-height: 39%;
+  }
+
+  .tema1 > :nth-last-child(-n + 3) {
+    margin: 0;
   }
 }
