@@ -245,6 +245,35 @@ main {
   .resume {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+  }
+
+  .box3 {
+    width: 127%;
+    margin-top: 82%;
+    margin-bottom: 62%;
+  }
+
+  .resume_style {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+
+  .kontakt {
+    height: 34%; /* justify-self: end; */
+    margin-left: 24%;
+  }
+
+  @media (width >=750px) {
+    /* resume **********************************/
+    .box3 {
+      margin-top: 31%;
+      margin-bottom: 94%;
+    }
+
+    /* .kontakt {
+      height: 17%;
+    } */
   }
 }
 .test {
@@ -325,6 +354,19 @@ p {
 .sec2_resume section:nth-last-child(1) {
   padding-top: 10%;
   padding-bottom: 10%;
+}
+.kontakt h3 {
+  margin: 0;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--gul1);
+
+  padding: 14px;
+  border: var(--gul2) 3px solid;
 }
 
 /* tema ******************************** */
