@@ -216,7 +216,12 @@ main {
   max-width: 54%;
   left: 20%;
 }
-
+.box3 h2 {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -29%;
+  font-size: 171%;
+}
 .nav1_resume li,
 .nav2_resume li {
   font-size: 16px;
@@ -324,12 +329,12 @@ p {
 .box8 {
   width: 22vw;
   height: 2vw;
-
   padding: 1px;
   border: 1px solid black;
   border-radius: 10px;
   grid-column: 2;
   max-width: 185px;
+  margin-left: 10%;
 }
 
 .box5 {
@@ -468,6 +473,12 @@ p {
     height: 24%;
     margin-left: 24%;
   }
+
+  .box3 h2 {
+    margin-top: -27px;
+    margin-left: -18%;
+    font-size: 194%;
+  }
   /* portfolio **********************************/
   .temas {
     display: grid;
@@ -525,7 +536,7 @@ p {
   }
 
   .kontakt {
-    height: 34%;
+    height: 44%;
   }
 
   /* portfolio **********************************/
