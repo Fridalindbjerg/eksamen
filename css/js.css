@@ -1,22 +1,39 @@
-.home_button {
+/* .home_button {
   padding: 27px 90px !important;
   box-sizing: border-box !important;
   transform: scaleX(1) !important;
   /* transition: transform 1s ease !important; */
-  writing-mode: initial !important;
-  /* font-size: 31px !important; */
-}
+/* writing-mode: initial !important; */
+/* font-size: 31px !important; */
 
-.translate {
+/* .translate {
   transform: scaleX(3) !important;
 }
 
 .header_nav li a {
   display: block;
-}
+} */
 /* 
 .home_button {
   transform: scale(7) !important;
   background-color: black !important;
   transition: transform 0.3s ease, background-color 0.3s ease;
 } */
+
+.pics_tema {
+  display: flex;
+  overflow: hidden;
+  width: 300px; /* Bredde på beholderen */
+  height: 200px; /* Højde på beholderen */
+}
+
+.pics_temajs {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth scroll */
+}
+
+.pics_temajs img {
+  width: 300px; /* Match bredden på beholderen */
+  height: 200px; /* Match højden på beholderen */
+  flex-shrink: 0;
+}
