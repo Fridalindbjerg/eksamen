@@ -19,6 +19,8 @@ body {
 
 header {
   flex-shrink: 0; /* Forhindrer headeren i at ændre størrelse */
+  position: relative;
+  z-index: 4;
 }
 
 main {
@@ -35,7 +37,6 @@ main {
   border-radius: 14px;
   font-size: 16px;
   list-style: none;
-  position: relative; /* Sikrer korrekt positionering */
 }
 
 .header_nav a {
@@ -132,6 +133,12 @@ main {
 }
 
 /* portfolio **********************************/
+.grid-1_3_1 h1 {
+  grid-column: 2/3;
+  margin: -1px 0px -4px 7%;
+  font-size: 265%;
+}
+
 .portfolio a {
   text-decoration: none;
   color: black;
@@ -407,32 +414,32 @@ main {
 
 .tema1 h1 {
   margin: 0 10%;
+  align-self: end;
 }
 
-.tema1 p {
-  margin: 0 10%;
+.margin_port > * {
+  margin: 26px 10%;
 }
 
-.tema1 div:last-child {
+/* .tema1 div:last-child {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
   justify-content: flex-start;
-}
+} */
 
 .tema1 a {
   align-self: center;
-  padding: 10px;
+  padding: 10px 46px;
   background-color: var(--gul2);
-  margin-bottom: 10px;
   border: black 1px solid;
   border-radius: 15px;
   text-decoration: none;
   color: black;
+  margin-top: 30px;
 }
 
 .tema1 a:first-child {
-  padding: 10px 46px;
 }
 
 .tema1 a:hover {
@@ -620,6 +627,10 @@ main {
 
   .tema1 > :nth-last-child(-n + 3) {
     margin: 0;
+  }
+
+  .margin_port {
+    margin-top: 37%;
   }
 }
 
