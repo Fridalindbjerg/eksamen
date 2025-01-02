@@ -5,20 +5,16 @@ html {
   --gul3: #fff4d1;
 }
 
-/* body {
-  background-color: var(--background);
-  margin: 0;
-  display: grid;
-  grid-template-rows: 1fr 15fr;
-  max-height: 2000px;
-} */
-
 body {
+  font-family: "pf-marlet-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
   background-color: var(--background);
   margin: 0;
   display: flex;
   flex-direction: row;
-  max-height: 2000px;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 header {
@@ -47,16 +43,7 @@ main {
   text-decoration: none;
   display: block; /* Udvid linket til at fylde hele li */
 }
-/* 
-.header_nav li:hover {
-  color: black;
-  text-decoration: none;
-  display: block;
-  transform: scaleX(1.5);
-  writing-mode: initial;
-  position: relative;
-}
-  */
+
 .header_nav ul {
   margin: 0;
   padding: 0;
@@ -195,13 +182,13 @@ main {
 
 .h2_tema {
   position: relative;
-  font-size: 12px;
+  font-size: 100%;
   margin: 0;
 }
 
 .tema_text {
   position: relative;
-  font-size: 10px;
+  font-size: 82%;
 }
 
 /* resume **********************************/
@@ -235,14 +222,31 @@ main {
   font-size: 16px;
   list-style: none;
   padding: 0;
-  font-weight: normal;
   text-align: left;
+}
+
+.nav1_resume li {
+  white-space: nowrap;
+  grid-column: 1;
+}
+.nav1_resume li:first-of-type,
+.nav2_resume li:first-of-type {
+  grid-column: span 2;
+  text-align: center;
+  font-weight: 400;
 }
 
 .nav1_resume ul,
 .nav2_resume ul {
-  padding: 10%;
+  padding: 10% 0;
   margin: 0;
+}
+
+.nav2_resume ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto; /* Centrer containeren horisontalt */
+  gap: 7% 19%;
 }
 .nav_resume {
   background-color: var(--gul1);
@@ -250,9 +254,7 @@ main {
 
 .nav1_resume,
 .nav2_resume {
-  padding: 10%;
   text-align: center;
-  font-weight: bold;
 }
 
 .resume_style h1,
@@ -301,7 +303,6 @@ p {
 
 .sec2_resume section:nth-last-child(1) {
   padding-top: 10%;
-  padding-bottom: 10%;
 }
 .kontakt h3 {
   margin: 0;
@@ -317,6 +318,57 @@ p {
   border: var(--gul2) 3px solid;
 }
 
+.box5,
+.box6,
+.box7,
+.box8 {
+  width: 22vw;
+  height: 2vw;
+
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 10px;
+  grid-column: 2;
+  max-width: 185px;
+}
+
+.box5 {
+  grid-row: 2;
+}
+.box6 {
+  grid-row: 3;
+}
+.box7 {
+  grid-row: 4;
+}
+
+.box5_1,
+.box6_1,
+.box7_1,
+.box8_1 {
+  height: 2vw;
+  padding: 0.5px;
+  background-color: var(--gul1);
+  border-radius: 10px;
+}
+.box5_1 {
+  width: 12vw;
+  max-width: 144px;
+}
+
+.box6_1 {
+  width: vw;
+  max-width: 108px;
+}
+.box7_1 {
+  width: 12vw;
+  max-width: 144px;
+}
+
+.box8_1 {
+  width: 7vw;
+  max-width: 84px;
+}
 /* tema ******************************** */
 
 .pic_media {
@@ -403,7 +455,7 @@ p {
 
   .box3 {
     width: 127%;
-    margin-top: 82%;
+    margin-top: 55%;
     margin-bottom: 62%;
   }
 
@@ -413,7 +465,7 @@ p {
   }
 
   .kontakt {
-    height: 34%; /* justify-self: end; */
+    height: 24%;
     margin-left: 24%;
   }
   /* portfolio **********************************/
@@ -441,6 +493,10 @@ p {
   .grid-2_1 {
     border: 5px #c4b277 solid;
   }
+
+  .h2_tema {
+    font-size: 75%;
+  }
   /* temas **********************************/
 
   .tema1 {
@@ -451,14 +507,36 @@ p {
 @media (width >=750px) {
   /* resume **********************************/
   .box3 {
-    margin-top: 31%;
+    margin-top: 13%;
     margin-bottom: 94%;
   }
+  .box5,
+  .box6,
+  .box7,
+  .box8 {
+    width: 16vw;
+    height: 1vw;
+  }
+  .box5_1,
+  .box6_1,
+  .box7_1,
+  .box8_1 {
+    height: 1vw;
+  }
+
+  .kontakt {
+    height: 34%;
+  }
+
   /* portfolio **********************************/
 
   .grid-1_3_1 {
     max-width: 1200px;
     margin: 13% auto 0; /* 20px top-margin, auto horisontalt, ingen bottom-margin */
+  }
+
+  .h2_tema {
+    font-size: 120%;
   }
   /* temas **********************************/
 
@@ -501,5 +579,12 @@ p {
 
   .tema1 > :nth-last-child(-n + 3) {
     margin: 0;
+  }
+}
+
+@media (width >=1200px) {
+  .h1_index {
+    font-size: 120.3px;
+    margin-bottom: 2%;
   }
 }
