@@ -142,7 +142,7 @@ main {
 
 @keyframes fall_kf {
   from {
-    translate: 0 -100%;
+    translate: 0 -200%;
   }
   to {
     translate: 0 0;
@@ -157,7 +157,7 @@ main {
 
 @keyframes slide_kf {
   from {
-    translate: 100% 0;
+    translate: 80% 0;
   }
   to {
     translate: 0 0;
