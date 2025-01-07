@@ -134,6 +134,36 @@ main {
   color: black;
 }
 
+.fall {
+  animation-name: fall_kf;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes fall_kf {
+  from {
+    translate: 0 -100%;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+.slide {
+  animation-name: slide_kf;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes slide_kf {
+  from {
+    translate: 100% 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
 /* portfolio **********************************/
 .grid-1_3_1 h1 {
   grid-column: 2/3;
