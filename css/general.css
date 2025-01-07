@@ -13,8 +13,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: row;
-  max-height: 100vh;
-  max-width: 100vw;
 }
 
 header {
@@ -76,11 +74,11 @@ main {
 
 .box {
   display: flex;
-  justify-content: center; /* Horisontal centrering */
+  justify-content: center;
   position: relative;
-  width: 100%; /* Bruger 100% af containerens bredde */
-  max-width: 800px; /* maksbredde - responsivt */
-  margin: 0 auto; /* Centerer boxen horisontalt */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   height: 40vh;
   margin-top: 56%;
 }
@@ -109,7 +107,7 @@ main {
 .center_index {
   display: flex;
   margin: 0;
-  flex-direction: column; /* Stabler elementerne lodret */
+  flex-direction: column;
 }
 
 .h1_index {
@@ -142,7 +140,7 @@ main {
 
 @keyframes fall_kf {
   from {
-    translate: 0 -200%;
+    translate: 0 -250%;
   }
   to {
     translate: 0 0;
@@ -191,7 +189,7 @@ main {
   grid-template-columns: 1fr 2fr;
   border: 5px #e4cf89 solid;
   place-items: center;
-  text-align: center; /* Sørger for, at teksten er centreret indenfor h1 */
+  text-align: center;
   position: relative;
   z-index: 1;
 }
@@ -203,7 +201,7 @@ main {
   border-right: #e4cf89 5px solid;
   /* border-bottom: #c4b277 5px solid; */
   place-items: center;
-  text-align: center; /* Sørger for, at teksten er centreret indenfor h1 */
+  text-align: center;
   position: relative;
   z-index: 1;
 }
@@ -279,7 +277,7 @@ main {
 .nav2_resume ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 auto; /* Centrer containeren horisontalt */
+  margin: 0 auto;
   gap: 7% 19%;
 }
 .nav_resume {
@@ -436,6 +434,10 @@ main {
   border: black 1px solid;
 }
 
+.tema1_body div:first-of-type {
+  margin: auto;
+}
+
 .tema1 h1 {
   margin: 0 10%;
   align-self: end;
@@ -586,7 +588,6 @@ main {
 
   .kontakt {
     height: 44%;
-    /* margin: -33px 0% 0 16%; */
     margin: -38px 4% 10% 14%;
   }
   .resume h2:first-child {
@@ -596,12 +597,13 @@ main {
 
   .grid-1_3_1 {
     max-width: 1200px;
-    margin: 13% auto 0; /* 20px top-margin, auto horisontalt, ingen bottom-margin */
+    margin: 7% auto 0;
   }
 
   .h2_tema {
     font-size: 120%;
   }
+
   /* temas **********************************/
 
   .tema1 {
@@ -624,11 +626,15 @@ main {
     background-color: var(--gul2);
     border-radius: 50px;
     padding: 4%;
-    margin: 10px 30px;
+    margin: 78px 30px;
     border: black 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .tema1_body div:first-of-type {
+    margin: auto;
   }
 
   .pics_tema div:first-of-type {
