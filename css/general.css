@@ -261,7 +261,7 @@ main {
   text-align: left;
 }
 
-.nav1_resume li {
+.nav1_resume li:nth-child(-n + 4) {
   white-space: nowrap;
   grid-column: 1;
 }
